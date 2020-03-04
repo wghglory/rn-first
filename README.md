@@ -1,5 +1,7 @@
 # Guidance
 
+Whenever installing any npm package, run `pod install` in ios folder.
+
 ## Installation Issues in China
 
 ios/Podfile
