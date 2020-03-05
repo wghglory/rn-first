@@ -5,7 +5,7 @@
  * @format
  * @flow
  */
-
+import 'react-native-gesture-handler'; // make sure it's at the top and there's nothing else before it
 import React from 'react';
 import {
   SafeAreaView,
@@ -26,12 +26,14 @@ import {
 
 import ComponentTry from './ComponentTry';
 import CityList from './CityList';
+import NavigationStack from './NavigationStack';
 
 const App: () => React$Node = () => {
   return (
     <>
       {/* <ComponentTry></ComponentTry> */}
-      <CityList></CityList>
+      {/* <CityList></CityList> */}
+      <NavigationStack></NavigationStack>
 
       {/* <StatusBar barStyle="dark-content" />
       <SafeAreaView>
