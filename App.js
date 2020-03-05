@@ -25,11 +25,14 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import ComponentTry from './ComponentTry';
+import CityList from './CityList';
 
 const App: () => React$Node = () => {
   return (
     <>
-      <ComponentTry></ComponentTry>
+      {/* <ComponentTry></ComponentTry> */}
+      <CityList></CityList>
+
       {/* <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
