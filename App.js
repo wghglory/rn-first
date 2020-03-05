@@ -27,13 +27,15 @@ import {
 import ComponentTry from './ComponentTry';
 import CityList from './CityList';
 import NavigationStack from './NavigationStack';
+import NavigationBottomTab from './NavigationBottomTab';
 
 const App: () => React$Node = () => {
   return (
     <>
       {/* <ComponentTry></ComponentTry> */}
       {/* <CityList></CityList> */}
-      <NavigationStack></NavigationStack>
+      {/* <NavigationStack></NavigationStack> */}
+      <NavigationBottomTab></NavigationBottomTab>
 
       {/* <StatusBar barStyle="dark-content" />
       <SafeAreaView>
