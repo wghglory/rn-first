@@ -7,6 +7,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import Home from './Home';
+import Company from './Company';
 import Message from './Message';
 import My from './My';
 import Welcome from './Welcome';
@@ -28,6 +29,12 @@ export default function Navigator({navigation}) {
           component={Home}
           options={{
             title: 'Home',
+          }}></Tab.Screen>
+        <Tab.Screen
+          name="Company"
+          component={Company}
+          options={{
+            title: 'Company',
           }}></Tab.Screen>
         <Tab.Screen
           name="Message"
