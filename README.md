@@ -38,3 +38,11 @@ yarn android
 # 或者
 yarn react-native run-android
 ```
+
+## Use font awesome and other vector
+
+refer <https://github.com/oblador/react-native-vector-icons>
+
+```bash
+yarn add react-native-vector-icons  # https://oblador.github.io/react-native-vector-icons
+```

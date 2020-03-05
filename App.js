@@ -29,13 +29,19 @@ import CityList from './CityList';
 import NavigationStack from './NavigationStack';
 import NavigationBottomTab from './NavigationBottomTab';
 
+import AppContainer from './src';
+
 const App: () => React$Node = () => {
   return (
     <>
       {/* <ComponentTry></ComponentTry> */}
       {/* <CityList></CityList> */}
       {/* <NavigationStack></NavigationStack> */}
-      <NavigationBottomTab></NavigationBottomTab>
+      {/* <NavigationBottomTab></NavigationBottomTab> */}
+      <View style={{flex: 1}}>
+        <StatusBar barStyle="dark-content" />
+        <AppContainer />
+      </View>
 
       {/* <StatusBar barStyle="dark-content" />
       <SafeAreaView>
