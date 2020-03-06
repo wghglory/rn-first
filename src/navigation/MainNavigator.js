@@ -26,6 +26,7 @@ export default function MainNavigator({navigation}) {
           inactiveTintColor: 'gray',
         }}
         screenOptions={({route}) => ({
+          gestureEnabled: true,
           headerTitleStyle: {color: 'white'},
           headerStyle: {backgroundColor: 'rgb(29,216,200)'},
           tabBarIcon: ({focused, color, size}) => {
