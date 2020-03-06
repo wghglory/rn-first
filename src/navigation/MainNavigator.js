@@ -67,9 +67,9 @@ export default function MainNavigator({navigation}) {
         <Tab.Screen
           name="My"
           component={My}
-          options={{
-            title: 'My',
-          }}></Tab.Screen>
+          options={({route}) => ({
+            title: route.params?.item?.name || 'My',
+          })}></Tab.Screen>
       </Tab.Navigator>
       {/* <Stack.Navigator>
         <Stack.Screen name="Welcome" component={Welcome}></Stack.Screen>
