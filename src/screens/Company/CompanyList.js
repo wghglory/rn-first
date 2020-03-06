@@ -14,10 +14,6 @@ import {companyList} from '../../data';
 const wWidth = Dimensions.get('window').width;
 
 export default class CompanyList extends Component {
-  static navigationOptions = {
-    title: '公司',
-  };
-
   constructor(props) {
     super(props);
     this.state = {
