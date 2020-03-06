@@ -10,6 +10,7 @@ const Stack = createStackNavigator();
 export default function Company() {
   return (
     <Stack.Navigator
+      headerMode="float" // ios default float; android default screen; the other is none
       screenOptions={{
         headerTitleStyle: {color: 'white'},
         headerStyle: {backgroundColor: 'rgb(29,216,200)'},
