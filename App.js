@@ -7,6 +7,7 @@
  */
 import 'react-native-gesture-handler'; // make sure it's at the top and there's nothing else before it
 import React from 'react';
+import {Provider} from 'react-redux';
 import {
   SafeAreaView,
   StyleSheet,
@@ -30,6 +31,7 @@ import NavigationStack from './NavigationStack';
 import NavigationBottomTab from './NavigationBottomTab';
 
 import MainNavigator from './src/navigation/MainNavigator';
+import {store} from './src/store';
 
 const App: () => React$Node = () => {
   return (
@@ -38,10 +40,13 @@ const App: () => React$Node = () => {
       {/* <CityList></CityList> */}
       {/* <NavigationStack></NavigationStack> */}
       {/* <NavigationBottomTab></NavigationBottomTab> */}
-      <View style={{flex: 1}}>
-        <StatusBar barStyle="dark-content" />
-        <MainNavigator />
-      </View>
+
+      <Provider store={store}>
+        <View style={{flex: 1}}>
+          <StatusBar barStyle="dark-content" />
+          <MainNavigator />
+        </View>
+      </Provider>
 
       {/* <StatusBar barStyle="dark-content" />
       <SafeAreaView>
