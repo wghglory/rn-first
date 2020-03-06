@@ -13,6 +13,7 @@ export default function Company() {
       screenOptions={{
         headerTitleStyle: {color: 'white'},
         headerStyle: {backgroundColor: 'rgb(29,216,200)'},
+        headerBackTitleVisible: false, // To make an iOS just show the back button icon instead of the name of the previous screen and back button
       }}>
       <Stack.Screen name="CompanyList" component={CompanyList}></Stack.Screen>
       <Stack.Screen
