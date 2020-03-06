@@ -41,7 +41,15 @@ yarn react-native run-android
 
 ## Use font awesome and other vector
 
-refer <https://github.com/oblador/react-native-vector-icons>
+refer
+
+- <https://github.com/oblador/react-native-vector-icons>
+- <https://medium.com/@vimniky/how-to-use-vector-icons-in-your-react-native-project-8212ac6a8f06>
+- <https://github.com/oblador/react-native-vector-icons/issues/1074>
+
+![ios-font](./docs/images/ios-font.png)
+
+After removing those, xcode runs `shift + cmd + k` clean build and `cmd + b` build again.
 
 ```bash
 yarn add react-native-vector-icons  # https://oblador.github.io/react-native-vector-icons

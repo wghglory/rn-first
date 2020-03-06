@@ -20,10 +20,31 @@ export default function Navigator({navigation}) {
     <NavigationContainer>
       <Tab.Navigator
         initialRouteName="Home"
-        screenOptions={{
+        tabBarOptions={{
+          // showLabel: false 是否显示文字
+          activeTintColor: 'rgb(29,216,200)',
+          inactiveTintColor: 'gray',
+        }}
+        screenOptions={({route}) => ({
           headerTitleStyle: {color: 'white'},
           headerStyle: {backgroundColor: 'rgb(29,216,200)'},
-        }}>
+          tabBarIcon: ({focused, color, size}) => {
+            let iconName;
+
+            if (route.name === 'Home') {
+              iconName = 'globe';
+            } else if (route.name === 'Company') {
+              iconName = 'building-o';
+            } else if (route.name === 'Message') {
+              iconName = 'comments-o';
+            } else if (route.name === 'My') {
+              iconName = 'user-circle-o';
+            }
+
+            // You can return any component that you like here!
+            return <Icon name={iconName} size={size} color={color} />;
+          },
+        })}>
         <Tab.Screen
           name="Home"
           component={Home}
