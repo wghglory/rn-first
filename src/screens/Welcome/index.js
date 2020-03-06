@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
+// Welcome will jump to Home page after 2 second
+
 export default class Welcome extends Component {
   constructor(props) {
     super(props);
@@ -8,8 +10,7 @@ export default class Welcome extends Component {
 
   componentDidMount() {
     setTimeout(() => {
-      // this.props.navigation.navigate('Home');
-      console.log('welcome mounted');
+      this.props.navigation.navigate('Tabs');
     }, 2000);
   }
 
