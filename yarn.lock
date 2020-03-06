@@ -867,6 +867,18 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
+"@react-native-community/async-storage-backend-legacy@^2.0.0-rc.2":
+  version "2.0.0-rc.2"
+  resolved "https://registry.npm.taobao.org/@react-native-community/async-storage-backend-legacy/download/@react-native-community/async-storage-backend-legacy-2.0.0-rc.2.tgz#d2f9768db5ebaa041939cc3b0ece7ac185db8232"
+  integrity sha1-0vl2jbXrqgQZOcw7Ds56wYXbgjI=
+  dependencies:
+    "@react-native-community/async-storage" "^2.0.0-rc.2"
+
+"@react-native-community/async-storage@^2.0.0-rc.2":
+  version "2.0.0-rc.2"
+  resolved "https://registry.npm.taobao.org/@react-native-community/async-storage/download/@react-native-community/async-storage-2.0.0-rc.2.tgz#fed29f0990aab7e6b9ddca827f751682fffd0686"
+  integrity sha1-/tKfCZCqt+a53cqCf3UWgv/9BoY=
+
 "@react-native-community/cli-debugger-ui@^3.0.0":
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/@react-native-community/cli-debugger-ui/download/@react-native-community/cli-debugger-ui-3.0.0.tgz#d01d08d1e5ddc1633d82c7d84d48fff07bd39416"

@@ -10,6 +10,7 @@ import Home from '../screens/Home';
 import Company from '../screens/Company';
 import Message from '../screens/Message';
 import My from '../screens/My';
+import StorageDemo from '../screens/StorageDemo';
 import Welcome from '../screens/Welcome';
 
 const Tab = createBottomTabNavigator();
@@ -37,6 +38,8 @@ export function Tabs() {
             iconName = 'building-o';
           } else if (route.name === 'Message') {
             iconName = 'comments-o';
+          } else if (route.name === 'StorageDemo') {
+            iconName = 'file';
           } else if (route.name === 'My') {
             iconName = 'user-circle-o';
           }
@@ -62,6 +65,12 @@ export function Tabs() {
         component={Message}
         options={{
           title: 'Message',
+        }}></Tab.Screen>
+      <Tab.Screen
+        name="StorageDemo"
+        component={StorageDemo}
+        options={{
+          title: 'StorageDemo',
         }}></Tab.Screen>
       <Tab.Screen
         name="My"
