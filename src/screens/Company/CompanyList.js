@@ -9,7 +9,7 @@ import {
   TouchableHighlight,
   ImageBackground,
 } from 'react-native';
-import {companyList} from '../data';
+import {companyList} from '../../data';
 
 const wWidth = Dimensions.get('window').width;
 

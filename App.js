@@ -29,7 +29,7 @@ import CityList from './CityList';
 import NavigationStack from './NavigationStack';
 import NavigationBottomTab from './NavigationBottomTab';
 
-import AppContainer from './src';
+import MainNavigator from './src/navigation/MainNavigator';
 
 const App: () => React$Node = () => {
   return (
@@ -40,7 +40,7 @@ const App: () => React$Node = () => {
       {/* <NavigationBottomTab></NavigationBottomTab> */}
       <View style={{flex: 1}}>
         <StatusBar barStyle="dark-content" />
-        <AppContainer />
+        <MainNavigator />
       </View>
 
       {/* <StatusBar barStyle="dark-content" />

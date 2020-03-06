@@ -6,16 +6,16 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-import Home from './Home';
-import Company from './Company';
-import Message from './Message';
-import My from './My';
-import Welcome from './Welcome';
+import Home from '../screens/Home';
+import Company from '../screens/Company';
+import Message from '../screens/Message';
+import My from '../screens/My';
+import Welcome from '../screens/Welcome';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
-export default function Navigator({navigation}) {
+export default function MainNavigator({navigation}) {
   return (
     <NavigationContainer>
       <Tab.Navigator
